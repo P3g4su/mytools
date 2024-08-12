@@ -1,0 +1,11 @@
+1. Definição dos Requisitos
+Linguagem de Programação: Python é uma excelente escolha devido à sua simplicidade e extensa biblioteca de segurança, como requests, BeautifulSoup, lxml, e frameworks como Flask para criar uma interface web, se necessário.
+Vulnerabilidades a Serem Identificadas:
+SQL Injection: Injeção de comandos SQL através de parâmetros de entrada.
+Cross-Site Scripting (XSS): Injeção de scripts maliciosos em páginas web.
+Bypass de WAFs: Mecanismos para contornar proteções fornecidas por WAFs.
+2. Estrutura Geral do Scanner
+Módulo de Rastreamento (Crawler): Este módulo rastreia a aplicação web, identificando todos os pontos de entrada (formularios, URLs, etc.).
+Módulo de Ataque SQL Injection: Tenta injetar comandos SQL nos parâmetros identificados para verificar se a aplicação é vulnerável.
+Módulo de Ataque XSS: Injeta scripts maliciosos nos pontos de entrada e verifica se a aplicação os executa sem validação adequada.
+Módulo de Bypass de WAF: Utiliza técnicas avançadas para modificar as payloads de modo a evitar detecção por WAFs.
